@@ -1,9 +1,9 @@
 <?php
-get_header();
+get_header(); // Inclut le fichier header.php
 ?>
-<main>
 
-</main>
+<!-- -->
+
 <?php
-get_footer();
+get_footer(); // Inclut le fichier footer.php
 ?>

@@ -1,11 +1,73 @@
 /*
-Theme Name: Nathalie Mota
+Theme Name: nathaliemota
 Author: Jerry Brézout
 Description: Thème WordPress pour Nathalie Mota, photographe professionnelle.
 Version: 1.0
 */
 
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-p {
-    color: rgb(22, 19, 203);
+
+
+:root {
+  --red-primary: #e00000; /* Rouge principal */
+  --red-secondary: #fe5858; /* Rouge secondaire */
+  --red-tertiary: #fe5858; /* Rouge tertiaire */
+  --black: #000000; /* Noir */
+  --blue-dark: #313144; /* Bleu foncé */
+  --gray-dark: #c4c4c4; /* Gris foncé */
+  --gray-medium: #d8d8d8; /* Gris moyen */
+  --gray-light: #d8d8d8; /* Gris clair */
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+main {
+  flex: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* Utilise la couleur du texte existante */
+}
+
+/* Classes CSS réutilisables pour les styles de texte */
+.space-mono-h1 {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.space-mono-h2 {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-text {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-text {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
 }

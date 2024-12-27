@@ -1,0 +1,102 @@
+/* Règles générales */
+
+.modal__overlay {
+  background-color: rgba(0, 0, 0, 0.8); /* Fond noir semi-transparent */
+  overflow: hidden; /* Empêche le scroll pendant que la modale est ouverte */
+}
+
+.modal {
+  position: absolute;
+  display: none;
+  top: 10%;
+  height: 80%;
+  margin: auto;
+}
+
+.modal.is-active {
+  display: block; /* Affichée lorsqu'elle est active */
+}
+
+.modal__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  border: 5px solid black;
+  background-color: white;
+}
+
+.modal__content img {
+  padding: 10px 0px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.wpcf7-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.wpcf7-form p {
+  width: 100%;
+}
+
+.wpcf7-form input,
+.wpcf7-form textarea {
+  border: 1px solid #b8bbc2;
+  border-radius: 8px;
+  width: 100%;
+  padding: 10px; /* Ajout de padding cohérent */
+  box-sizing: border-box; /* Inclut la bordure et le padding dans la taille totale */
+}
+
+.wpcf7-form input {
+  height: 50px;
+}
+
+.wpcf7-form textarea {
+  height: 150px;
+}
+
+.wpcf7-form input[type="submit"] {
+  background-color: #d8d8d8;
+  border: none; /* Évite une bordure qui changerait la taille */
+  cursor: pointer;
+  height: 50px;
+  border-radius: 0;
+}
+
+/* Media Queries */
+
+/* Écrans larges (1024px et plus) */
+@media (min-width: 1024px) {
+  .modal {
+    width: 40%;
+    left: 30%;
+  }
+}
+
+/* Écrans moyens et petits (moins de 1024px) */
+@media (max-width: 1023px) {
+  .modal {
+    width: 80%;
+    left: 10%;
+    top: 12%;
+  }
+
+  .wpcf7-form input {
+    height: 35px;
+  }
+
+  .wpcf7-form textarea {
+    height: 100px;
+  }
+}
